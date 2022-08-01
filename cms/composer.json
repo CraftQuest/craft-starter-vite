@@ -1,17 +1,9 @@
 {
   "require": {
-    "craftcms/cms": "^3.6.9",
+    "craftcms/cms": "^4.0.0",
     "vlucas/phpdotenv": "^5.4.0",
     "yiisoft/yii2-redis": "^2.0.6",
-    "nystudio107/craft-imageoptimize": "^1.0.0",
-    "nystudio107/craft-fastcgicachebust": "^1.0.0",
-    "nystudio107/craft-minify": "^1.2.5",
-    "nystudio107/craft-typogrify": "^1.1.4",
-    "nystudio107/craft-retour": "^3.0.0",
-    "nystudio107/craft-seomatic": "^3.2.0",
-    "nystudio107/craft-templatecomments": "^1.0.0",
-    "nystudio107/craft-webperf": "^1.0.0",
-    "nystudio107/craft-vite": "^1.0.20"
+    "nystudio107/craft-vite": "^4.0.0"
   },
   "require-dev": {
     "nystudio107/craft-autocomplete": "^1.0.0",

@@ -1,23 +1,30 @@
-{% extends "_layouts/generic-page-layout.twig" %}
+index.twig
 
-{% block headLinks %}
-    {{ parent() }}
-    <link rel="amphtml" href="{{ siteUrl('/amp') }}">
-{% endblock headLinks %}
 
-{% block content %}
-    <section>
-        <h1>content</h1>
-    </section>
-{% endblock %}
 
-{% block subcontent %}
-    <section>
-        <h2>subcontent</h2>
-    </section>
-{% endblock %}
 
-{# -- Any JavaScript that should be included before </body> -- #}
-{% block bodyJs %}
-    {{ parent() }}
-{% endblock bodyJs %}
+{# -- Critical CSS -- #}
+{#
+# Use Nginx Server Sider Includes (SSI) to render different HTML depending on
+# the value in the `critical-css` cookie. ref: http://nginx.org/en/docs/http/ngx_http_ssi_module.html
+#}
+{#{% set cssHash = craft.vite.getCssHash("src/js/app.ts") %}#}
+{#
+# If the `critical-css` cookie is set, the client already has the CSS file download,
+# so don't include the critical CSS, and load the full stylesheet(s) synchronously
+#}
+{#<!--# if expr="$HTTP_COOKIE=/critical\-css\={{ cssHash }}/" -->#}
+{#{{ craft.vite.script("src/js/app.ts", false) }}#}
+{#<!--# else -->#}
+{#
+# If the cookie is not set, set the cookie, then include the critical CSS for this page,
+# and load the full stylesheet(s) asychronously
+#}
+{#<script>#}
+{#    Cookie.set("critical-css", "{{ cssHash }}", { expires: "7D", secure: true });#}
+{#</script>#}
+{#{{ craft.vite.includeCriticalCssTags() }}#}
+{#{{ craft.vite.script("src/js/app.ts", true) }}#}
+{#<!--# endif -->#}
+{# -- Favicons, webapp manifests, etc. -- #}
+{#{{ craft.vite.inline("@webroot/dist/assets/favicons/webapp.html") }}#}

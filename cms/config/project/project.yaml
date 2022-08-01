@@ -1,105 +1,35 @@
-dateModified: 1621127449
+dateModified: 1659389200
 email:
   fromEmail: andrew@nystudio107.com
   fromName: Craft
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
-plugins:
-  fastcgi-cache-bust:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  image-optimize:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_IMAGEOPTIMIZE_LICENSE
-    schemaVersion: 1.0.0
+fs:
+  site:
+    hasUrls: true
+    name: Site
     settings:
-      allowUpScaledImageVariants: false
-      assetVolumeSubFolders: true
-      autoSharpenScaledImages: true
-      createColorPalette: true
-      createPlaceholderSilhouettes: false
-      imageTransformTypeSettings:
-        __assoc__:
-          -
-            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
-            -
-              __assoc__:
-                -
-                  - domain
-                  - ''
-                -
-                  - apiKey
-                  - ''
-                -
-                  - securityToken
-                  - ''
-          -
-            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
-            -
-              __assoc__:
-                -
-                  - baseUrl
-                  - $SERVERLESS_SHARP_CLOUDFRONT_URL
-          -
-            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
-            -
-              __assoc__:
-                -
-                  - baseUrl
-                  - ''
-                -
-                  - securityKey
-                  - ''
-                -
-                  - includeBucketPrefix
-                  - ''
-      lowerQualityRetinaImageVariants: false
-      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
-  minify:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  retour:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_RETOUR_LICENSE
-    schemaVersion: 3.0.9
-  seomatic:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_SEOMATIC_LICENSE
-    schemaVersion: 3.0.9
-  templatecomments:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  typogrify:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
+      path: '@webroot/assets/site'
+    type: craft\fs\Local
+    url: '@assetsUrl/assets/site'
+meta:
+  __names__:
+    5c642d7e-b16b-4836-9575-668d75d242e5: Site # Site
+    53ed4ec6-af5c-42a2-afad-80c9a997d531: 'Public Schema' # Public Schema
+plugins:
   vite:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  webperf:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_WEBPERF_LICENSE
-    schemaVersion: 1.0.1
 system:
   edition: pro
   live: true
-  name: Project
+  name: 'Craft Starter Vite'
   retryDuration: 60
-  schemaVersion: 3.6.6
+  schemaVersion: 4.0.0.9
   timeZone: America/New_York
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: ''
   photoVolumeUid: null

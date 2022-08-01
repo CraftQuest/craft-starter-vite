@@ -21,12 +21,8 @@ use craft\helpers\App;
 
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
-    'modules' => [
-        'site-module' => [
-            'class' => \modules\sitemodule\SiteModule::class,
-        ],
-    ],
-    'bootstrap' => ['site-module'],
+    'modules' => [],
+    'bootstrap' => [],
     'components' => [
         'cache' => [
             'class' => yii\redis\Cache::class,

@@ -39,6 +39,6 @@ return [
     'maxCachedCloudImageSize' => 3000,
     'maxUploadFileSize' => '100M',
     'omitScriptNameInUrls' => true,
-    'useEmailAsUsername' => true,
+    'useEmailAsUsername' => false,
     'usePathInfo' => true,
 ];
