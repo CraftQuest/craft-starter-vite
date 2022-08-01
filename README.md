@@ -1,8 +1,6 @@
-<p align="center"><a href="https://craftcms.com/" target="_blank"><img width="300" height="300" src="https://nystudio107.com/img/site/nystudio107_submark.svg" alt="nystudio107"></a></p>
+# Craft CMS 4 Starter with Vite
 
-## About nystudio107/craft
-
-This is an alternate scaffolding package for Craft 3 CMS projects to Pixel & Tonic's canonical [craftcms/craft](https://github.com/craftcms/craft) package.
+Based on @nystudio107's awesome starter project. Simplified for learning purposes, and updated to Craft 4.
  
 ### Vite buildchain
 
@@ -10,53 +8,8 @@ This project uses a [Vite.js](https://vitejs.dev/) for the build system as per [
 
 Vite is _fast_ ⚡
 
-### The project
-
-The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templates/_boilerplate` system for web/AJAX/AMP pages, and implements a number of technologies/techniques:
- 
-* [Docker](https://www.docker.com/) Docker is used for local development; see **Setting Up Local Dev** below for details
-* A base Twig templating setup as described in [An Effective Twig Base Templating Setup](https://nystudio107.com/blog/an-effective-twig-base-templating-setup)
-* [Vite.js](https://vitejs.dev/) is used for the build system as per [Vite.js Next Generation Frontend Tooling + Craft CMS](https://nystudio107.com/blog/using-vite-js-next-generation-frontend-tooling-with-craft-cms)
-* [TypeScript](https://www.typescriptlang.org/) for strictly typed JavaScript code
-* [Vue.js 3.0](https://vuejs.org/) is used for some of the interactive bits on the website, and Vue.js 3.x allows us to leverage the [Composition API](https://composition-api.vuejs.org/) 
-* [Tailwind CSS](https://tailwindcss.com/) for the site-wide CSS using the [@tailwindcss/jit](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css)
-* JSON-LD structured data as per [Annotated JSON-LD Structured Data Examples](https://nystudio107.com/blog/annotated-json-ld-structured-data-examples)
-* [Google AMP](https://developers.google.com/amp/) versions of the podcast episode and other pages
-* Image transforms are done via a [Serverless Image Handler](https://aws.amazon.com/solutions/serverless-image-handler/) lambda function, as described in the [Setting Up Your Own Image Transform Service](https://nystudio107.com/blog/setting-up-your-own-image-transform-service) article
-* Static assets are stored in AWS S3 buckets with CloudFront as the CDN, as per the [Setting Up AWS S3 Buckets + CloudFront CDN for your Assets](https://nystudio107.com/blog/using-aws-s3-buckets-cloudfront-distribution-with-craft-cms) article
-* Implements a Service Worker via Google's [Workbox](https://developers.google.com/web/tools/workbox/) as per [Service Workers and Offline Browsing](https://nystudio107.com/blog/service-workers-and-offline-browsing)
-* Critical CSS as per [Implementing Critical CSS on your website](https://nystudio107.com/blog/implementing-critical-css) using the [rollup-plugin-critical](https://github.com/nystudio107/rollup-plugin-critical)
-* Frontend error handling as per [Handling Errors Gracefully in Craft CMS](https://nystudio107.com/blog/handling-errors-gracefully-in-craft-cms)
-* A custom site module as per [Enhancing a Craft CMS 3 Website with a Custom Module](https://nystudio107.com/blog/enhancing-a-craft-cms-3-website-with-a-custom-module)
-* CLI-based queue as per [Robust queue job handling in Craft CMS](https://nystudio107.com/blog/robust-queue-job-handling-in-craft-cms)
-* FastCGI Static Cache as per [Static Page Caching with Craft CMS](https://nystudio107.com/blog/static-caching-with-craft-cms)
-* [buddy.works](http://buddy.works/) atomic deployments
-
-...and probably a bunch of other stuff too.
-
-The following Craft CMS plugins are used on this site:
-* [FastCGI Cache Bust](https://nystudio107.com/plugins/fastcgi-cache-bust) - to bust the FastCGI cache whenever entries are modified
-* [ImageOptimize](https://nystudio107.com/plugins/imageoptimize) - for the optimized images and `srcset`s used on the site
-* [Minify](https://nystudio107.com/plugins/minify) - to minify the HTML and inline JS/CSS
-* [Retour](https://nystudio107.com/plugins/retour) - for setting up 404 redirects
-* [SEOmatic](https://nystudio107.com/plugins/seomatic) - for handling site-side SEO
+### Default Plugins
 * [Vite](https://nystudio107.com/plugins/vite) - for loading Vite-generated `manifest.json` resources in a modern way
-* [Typogrify](https://nystudio107.com/plugins/typogrify) - for smart quotes and other typographic ligatures
-* [Webperf](https://nystudio107.com/plugins/webperf) - for monitoring web performance
-
-You can read more about it in the [Setting up a New Craft 3 CMS Project](https://nystudio107.com/blog/setting-up-a-craft-cms-3-project) article.
-
-## Using nystudio107/craft
-
-This project package works exactly the way Pixel & Tonic's [craftcms/craft](https://github.com/craftcms/craft) package works; you create a new project by first creating & installing the project:
-
-    composer create-project nystudio107/craft PATH --no-install
-
-Make sure that `PATH` is the path to your project, including the name you want for the project, e.g.:
-
-    composer create-project nystudio107/craft craft3 --no-install
-
-We use `--no-install` so that the composer packages for the root project are not installed.
 
 ## Setting Up Local Dev
 
