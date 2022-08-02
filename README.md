@@ -41,8 +41,8 @@ vite_1        |   ready in 1573ms.
 
 The CP login credentials are initially set as follows:
 
-Login: `andrew@nystudio107.com` \
-Password: `letmein`
+Login: `admin` \
+Password: `password`
 
 Obviously change these to whatever you like as needed.
 
