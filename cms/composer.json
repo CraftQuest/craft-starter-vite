@@ -6,7 +6,7 @@
     "nystudio107/craft-vite": "^4.0.0"
   },
   "require-dev": {
-    "craftcms/craft-generator": "^1.0.0",
+    "craftcms/generator": "^1.0.0",
     "nystudio107/craft-autocomplete": "^1.0.0",
     "yiisoft/yii2-shell": "^2.0.3"
   },
