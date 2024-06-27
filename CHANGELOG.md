@@ -1,5 +1,15 @@
 # nystudio107/craft Change Log
 
+## 2.5.13 - 2024.06.27
+### Changed
+* Update `global-variables.twig` to apply `{% spaceless %}` around everything ([#91](https://github.com/nystudio107/craft/pull/91))
+* Unregister lingering service workers ([#92](https://github.com/nystudio107/craft/pull/92))
+
+### Fixed
+* Removed a reference to pollyfill.io, which is a security risk due to a supply-chain attack https://sansec.io/research/polyfill-supply-chain-attack
+* Fixed the hashbang in the node container script ([#94](https://github.com/nystudio107/craft/pull/94))
+* Updated `tab-handler.twig` to fix broken link and JavaScript code ([#93](https://github.com/nystudio107/craft/pull/93))
+
 ## 2.5.12 - 2022.05.31
 ### Changed
 * Use `craft up` to run migrations & apply Project Config changes
