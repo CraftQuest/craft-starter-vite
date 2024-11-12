@@ -1,4 +1,4 @@
-dateModified: 1659389200
+dateModified: 1731448532
 email:
   fromEmail: andrew@nystudio107.com
   fromName: Craft
@@ -14,7 +14,9 @@ fs:
 meta:
   __names__:
     5c642d7e-b16b-4836-9575-668d75d242e5: Site # Site
+    5da841b1-ca0d-46ff-8bb1-04d6c889ac54: $SITE_NAME # $SITE_NAME
     53ed4ec6-af5c-42a2-afad-80c9a997d531: 'Public Schema' # Public Schema
+    f89601e9-4ba9-4a48-9e99-350aa9914912: $SITE_NAME # $SITE_NAME
 plugins:
   vite:
     edition: standard
@@ -25,7 +27,7 @@ system:
   live: true
   name: 'Craft Starter Vite'
   retryDuration: 60
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.5.3.0
   timeZone: America/New_York
 users:
   allowPublicRegistration: false
